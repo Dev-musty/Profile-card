@@ -1,0 +1,173 @@
+:root{
+  --body-bg: #101828;
+  --bg: #E2F266;
+  --text:white;
+  --text2: #212426;
+  --shadow: #9CA653;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  background-color: var(--body-bg);
+  color: var(--text);
+  font-family: "Roboto", serif;
+  display: flex;
+  max-width: 425px;
+  margin: auto;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+a{
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--links);
+}
+
+h1{
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+.profile-card{
+  box-shadow: 0 0 10px var(--shadow);
+  border: 1px solid ;
+  border-radius: 15px;
+  width: 95%;
+}
+.bg{
+  background-image: url(./image/helloworld.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 110px;
+  border-radius: 13px;
+  margin: 2rem;
+  position: relative;
+}
+
+img{
+  width: 40%;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  
+}
+
+.informations{
+  margin: 10rem 0 0 1.5rem;
+  padding:0 2rem 2rem ;
+}
+.desired-job-title{
+  font-size: 1.5rem;
+  opacity: 80%;
+  margin-bottom: 1rem;
+}
+.bio{
+  font-size: 1.5rem;
+  margin-bottom: 3.5rem;
+  line-height: 1.5;
+}
+.email{
+  background-color: var(--bg);
+  padding: 0.7rem;
+  border-radius: 5px;
+  color: var(--text2);
+  font-weight: 500;
+}
+.email:hover{
+  box-shadow: 0 0 10px var(--shadow);
+}
+.location{
+  margin: 1.7rem 1rem 1rem 0;
+  display: inline-block;
+}
+.location i{
+  margin-right: 0.3rem;
+  font-size: 1.5rem;
+}
+.location-time{
+  font-size: 1.5rem;
+  
+  opacity: 80%;
+}
+.social-links i{
+  margin:0.3rem 0.2rem;
+  font-size: 2.2rem;
+}
+.social-links i:hover{
+  color: var(--bg);
+}
+
+@media(min-width: 320px){
+  body{
+    max-width: 320px;
+  }
+  .profile-card{
+    width: 90%;
+  }
+  .informations{
+    margin: 6rem 0 0 1rem;
+    padding:0 3rem 2rem;
+  }
+  .email{
+    font-size: 1.2rem;
+  }
+}
+@media(min-width: 375px){
+  body{
+    max-width: 390px;
+  }
+  .informations{
+    margin: 8rem 0 0 1.5rem;
+    padding:0 3rem 2rem;
+  }
+  .email{
+    font-size: 1.5rem;
+  }
+}
+
+@media(min-width: 768px){
+  body{
+    max-width: 700px;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  .desired-job-title{
+    font-size: 2rem;
+  }
+  .bio{
+    font-size: 2.2rem;
+  }
+  .bg{
+    height: 150px;
+  }
+  img{
+    width: 30%;
+    top: 40%;
+    left: 5%;
+  }
+  .informations{
+    margin: 12rem 0 0 2.3rem;
+    padding:0 3rem 2rem;
+  }
+  .email{
+    font-size: 2rem;
+  }
+  .location-time{
+    font-size: 2rem;
+  }
+  .location i{
+    font-size: 2rem;
+  }
+  .social-links i{
+    font-size: 2.5rem;
+  }
+}

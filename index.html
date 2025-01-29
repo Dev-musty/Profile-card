@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/ab174e0070.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 
+    Features
+    -> Profile pic
+    -> FullName
+    -> Desired Job titil
+    -> Short Bio
+    -> Current Location
+    -> Email
+    -> Social Links
+    -> Current time in UTC
+    -->
+    <section class="profile-card">
+      <div class="bg">
+        <img src="./image/ME.jpg" alt="my-picture" data-testid="profilePicture">
+      </div>
+      <div class="informations">
+        <h1 data-testid="fullName">Mustapha Ridwan</h1>
+        <p class="desired-job-title" data-testid="jobTitle">FullStack Developer</p>
+        <p class="bio" data-testid="shortBio"
+        >I loved transforming ideas into fully functional, creative web apppcations. I enjoy solving challenges and bringing concepts to life through clean code and thoughtful design.</p>
+        <a href="mailto:Mustaphatemitope19@gmail.com" class="email" data-testid="emailAddress">
+        Mustaphatemitope19@gmail.com
+        </a>
+        <div class="location-time">
+          <p class="location" data-testid="currentLocation"><i class="fa-solid fa-location-dot"></i> Lagos, Nigeria</p>
+          <span class="time" data-testid="currentTimeUTC"></span>
+        </div>
+
+        <div class="social-links" data-testid="socialLinks">
+            <a href="https://www.linkedin.com/in/ridwan-mustapha001?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app" target="_blank">
+              <i class="fa-brands fa-linkedin pr-2  " aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/Dev-musty" target="_blank">
+              <i class="fa-brands fa-github pr-2" aria-hidden="true"></i>
+            </a>
+            <a href="https://x.com/MustaphaRidwanT" target="_blank">
+              <i class="fa-brands fa-x-twitter pr-2" aria-hidden="true"></i>
+            </a>
+          
+        </div>
+        
+      </div>
+    </section>
+  <script src="./index.js"></script>
+</body>
+</html>
